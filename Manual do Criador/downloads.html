@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Downloads - Manual do Criador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tipografia e meta -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#ff7a18">
+
+</head>
+<body>
+<header id="cabecalho">
+  <div class="cx-header">
+    <div class="marca">Manual do Criador</div>
+    <input type="checkbox" id="bt-menu">
+    <label for="bt-menu" class="label-menu">&#9776;</label>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li class="drop">
+          <a href="tutoriais.html">Tutoriais</a>
+          <ul class="submenu">
+            <li><a href="tutoriais.html#impressao3d">Impressão 3D</a></li>
+            <li><a href="tutoriais.html#cnc">CNC Router</a></li>
+            <li><a href="tutoriais.html#laser">Laser</a></li>
+            <li><a href="tutoriais.html#eletronica">Eletrônica</a></li>
+          </ul>
+        </li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-centered">
+    <h1>Arquivos para baixar</h1>
+    <p>Modelos, arquivos de projeto e documentação útil.</p>
+  </div>
+</section>
+
+<section id="layout" class="section-pad">
+  <aside class="aside col">
+    <h2 class="side-title">Tipo</h2>
+    <ul class="side-menu">
+      <li><a href="#">Modelos 3D</a></li>
+      <li><a href="#">SVG / Corte a Laser</a></li>
+      <li><a href="#">Esquemas Eletrônicos</a></li>
+    </ul>
+  </aside>
+
+  <main class="main col">
+    <h2 class="main-title">Downloads disponíveis</h2>
+    <p class="main-intro">Escolha uma opção e clique para baixar.</p>
+
+    <section id="cards-grid">
+      <div class="card">
+        <h3>Arquivo STL - Suporte de fone</h3>
+        <p>Modelo 3D pronto para impressão.</p>
+        <a href="downloads/suporte-fone.stl" download class="btn">Baixar</a>
+      </div>
+
+      <div class="card">
+        <h3>SVG - Porta-retratos</h3>
+        <p>Arquivo vetorial para corte a laser.</p>
+        <a href="downloads/portaretratos.svg" download class="btn">Baixar</a>
+      </div>
+
+      <div class="card">
+        <h3>Esquema - Leitura biométrica</h3>
+        <p>PDF com diagrama e lista de componentes.</p>
+        <a href="downloads/luz-leitura.pdf" download class="btn">Baixar</a>
+      </div>
+    </section>
+
+  </main>
+</section>
+
+<footer id="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="logo-small">Manual do Criador</div>
+      <p>© 2025 Manual do Criador — Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-right">
+      <p>Renan Ferreira de Souza - RA:2760482522032</p>
+    </div>
+  </div>
+</footer>
+<script>
+const toggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Carrega o modo salvo
+if(localStorage.getItem("dark-mode") === "enabled"){
+    body.classList.add("dark-mode");
+    toggle.textContent = "☀️";
+}
+
+// Clique no botão
+toggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if(body.classList.contains("dark-mode")){
+        localStorage.setItem("dark-mode", "enabled");
+        toggle.textContent = "☀️";
+    } else {
+        localStorage.setItem("dark-mode", "disabled");
+        toggle.textContent = "🌙";
+    }
+});
+</script>
+
+</body>
+</html>
