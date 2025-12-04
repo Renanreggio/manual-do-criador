@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutoriais - Manual do Criador</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="cabecalho">
+  <div class="cx-header container">
+    <div class="marca"><a href="index.html" style="text-decoration:none;color:inherit">Manual do Criador</a></div>
+    <input type="checkbox" id="bt-menu">
+    <label for="bt-menu" class="label-menu">&#9776;</label>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li class="drop"><a href="tutoriais.html">Tutoriais</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-centered">
+      <h1>Tutoriais práticos e diretos</h1>
+      <p class="lead">Aprenda passo a passo — desde ideias para iniciantes até técnicas intermediárias.</p>
+  </div>
+</section>
+
+
+<section id="layout" class="section-pad">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+      <h2 style="margin:0">Tutoriais em destaque</h2>
+      <span class="badge">Atualizado • 2025</span>
+    </div>
+
+    <div id="cards-grid">
+      <article class="card">
+        <img src="img/guiaimpressao3d.jpg" alt="Guia Impressão 3D">
+        <h3>Guia de Impressão 3D</h3>
+        <p>Passo a passo para configurar sua impressora e evitar falhas comuns.</p>
+        <div style="margin-top:12px"><a class="btn" href="#">Ler tutorial</a></div>
+      </article>
+
+      <article class="card">
+        <img src="img/introducaocnc.jpg" alt="Introdução CNC">
+        <h3>Introdução à CNC</h3>
+        <p>Conceitos básicos, fixação de peças e primeiros cortes em MDF.</p>
+        <div style="margin-top:12px"><a class="btn" href="#">Ler tutorial</a></div>
+      </article>
+
+      <article class="card">
+        <img src="img/eletronicainiciantes.jpg" alt="Eletrônica iniciantes">
+        <h3>Eletrônica para Iniciantes</h3>
+        <p>Protoboard, componentes fundamentais e um circuito exemplo.</p>
+        <div style="margin-top:12px"><a class="btn" href="#">Ler tutorial</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="logo-small">Manual do Criador</div>
+      <p>© 2025 Manual do Criador — Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-right">
+      <p>Renan Ferreira de Souza - RA:2760482522032</p>
+    </div>
+  </div>
+</footer>
+<script>
+const toggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Carrega o modo salvo
+if(localStorage.getItem("dark-mode") === "enabled"){
+    body.classList.add("dark-mode");
+    toggle.textContent = "☀️";
+}
+
+// Clique no botão
+toggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if(body.classList.contains("dark-mode")){
+        localStorage.setItem("dark-mode", "enabled");
+        toggle.textContent = "☀️";
+    } else {
+        localStorage.setItem("dark-mode", "disabled");
+        toggle.textContent = "🌙";
+    }
+});
+</script>
+
+</body>
+</html>
