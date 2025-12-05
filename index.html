@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mundo DIY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Mundo DIY - tutoriais e projetos faça você mesmo." />
+
+  <!-- Link para o CSS do projeto -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tipografia e meta -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#ff7a18">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- HEADER -->
+<header id="cabecalho">
+  <div class="cx-header">
+    <!-- Botão Dark Mode -->
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+    <div class="marca">Manual do Criador</div>
+
+    
+
+    <input type="checkbox" id="bt-menu">
+    <label for="bt-menu" class="label-menu">&#9776;</label>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li class="drop">
+          <a href="tutoriais.html">Tutoriais</a>
+        </li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li class="login-btn">
+  <a href="#erro-login">Login / Cadastro</a>
+</li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+  <!-- HERO -->
+ <section id="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-centered">
+        <h1>Crie, Construa e Dê Vida às Suas Ideias</h1>
+        <p>Um espaço dedicado a makers, iniciantes e curiosos. Aqui você encontra projetos, tutoriais e ferramentas para transformar imaginação em realidade.</p>
+
+        <div class="hero-buttons">
+            <a href="#cards-grid" class="btn hero-btn">Começar Agora</a>
+            <a href="tutoriais.html" class="btn outline hero-btn">Ver Tutoriais</a>
+        </div>
+    </div>
+</section>
+
+  <!-- AREA PRINCIPAL: aside esquerdo | main | aside direito -->
+ 
+<section id="layout" class="section-pad">
+
+
+    <!-- SIDEBAR -->
+   <!-- ASIDE ESQUERDO – Redes Sociais -->
+<aside id="aside-esquerdo" class="col">
+  <h2 class="side-title">Siga-nos</h2>
+
+  <div class="social-links">
+
+    <a href="#" class="social" style="--clr:#E1306C" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#" class="social" style="--clr:#FF0000" aria-label="Youtube">
+      <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="#" class="social" style="--clr:#000000" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a href="#" class="social" style="--clr:#1877F2" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="#" class="social" style="--clr:#0A66C2" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+  </div>
+
+</aside>
+
+
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main col">
+        <h2 class="main-title">Conteúdo em Destaque</h2>
+        <p class="main-intro">Explore nossos tutoriais, artigos e projetos feitos especialmente para quem gosta de criar, aprender e experimentar novas ideias.</p>
+
+        <section id="cards-grid">
+
+  <section id="cards-grid">
+
+  <!-- 1. Impressão 3D -->
+  <div class="card">
+    <img src="img/print3d.jpg" alt="Impressora 3D em operação" loading="lazy">
+    <h3>Impressão 3D para Iniciantes</h3>
+    <p>Aprenda o básico sobre impressão 3D e dê seus primeiros passos no universo FDM.</p>
+    <a href="#" class="btn">Ler mais</a>
+  </div>
+
+  <!-- 2. CNC Router -->
+  <div class="card">
+    <img src="img/laser-cut.jpg" alt="Projetos com MDF e Corte a Laser" loading="lazy">
+    <h3>Projetos com MDF e Corte a Laser</h3>
+    <p>Modelos práticos e avançados para criar peças únicas utilizando corte a laser.</p>
+    <a href="#" class="btn">Ler mais</a>
+  </div>
+
+  <!-- 3. Eletrônica -->
+  <div class="card">
+    <img src="img/eletronica.jpg" alt="Protoboard com componentes eletrônicos" loading="lazy">
+    <h3>Eletrônica Descomplicada</h3>
+    <p>Aprenda os fundamentos da eletrônica de forma simples e prática.</p>
+    <a href="#" class="btn">Ler mais</a>
+  </div>
+
+  <!-- 4. Ferramentas Essenciais do Maker -->
+  <div class="card">
+    <img src="img/ferramentasmaker.jpg" alt="Ferramentas de laboratório e maker" loading="lazy">
+    <h3>Ferramentas Essenciais do Maker</h3>
+    <p>Seu guia para pós-processamento, medição e segurança no laboratório.</p>
+    <a href="#" class="btn">Ler mais</a>
+  </div>
+
+  <!-- 5. Guia de Filamentos e Chapas -->
+  <div class="card">
+    <img src="img/filamentos.jpg" alt="Filamentos e chapas para impressão 3D, Laser e CNC" loading="lazy">
+    <h3>Guia de Filamentos e Chapas</h3>
+    <p>Saiba escolher o material ideal para 3D, Laser e CNC.</p>
+    <a href="#" class="btn">Ler mais</a>
+  </div>
+
+  <!-- 6. Projetos de 3 Horas (Quick Wins) -->
+  <div class="card">
+    <img src="img/quick-wins.jpg" alt="Projetos rápidos de fabricação digital" loading="lazy">
+    <h3>Projetos de 3 Horas (Quick Wins)</h3>
+    <p>Resultados impressionantes em uma tarde de Fabricação Digital.</p>
+    <a href="#" class="btn">Ler mais</a>
+  </div>
+
+</section>
+
+
+
+
+    </main>
+
+<!-- ASIDE DIREITO – Utilidades & Engajamento -->
+<aside id="aside-direito" class="col">
+
+  <!-- Newsletter -->
+  <section class="aside-box">
+      <h3>Newsletter</h3>
+      <p>Receba novidades e ganhe um cupom exclusivo!</p>
+      <form class="newsletter-form">
+          <input type="email" placeholder="Seu e-mail" required>
+          <button type="submit">Assinar</button>
+      </form>
+      <p class="cupom">Cupom: <strong>DIY10</strong></p>
+  </section>
+
+  <!-- Mini Produtos -->
+  <section class="aside-box">
+      <h3>Mini Produtos</h3>
+      <div class="mini-produtos">
+          <div class="mini-item">
+              <img src="img/chaveiro.jpg" alt="Modelo STL" loading="lazy">
+              <span>Chaveiro</span>
+          </div>
+          <div class="mini-item">
+              <img src="img/suportefonekratos.jpg" alt="Modelo STL 2" loading="lazy">
+              <span>Suporte Fone</span>
+          </div>
+          <div class="mini-item">
+              <img src="img/organizador.jpg" alt="Modelo STL 3" loading="lazy">
+              <span>Organizador</span>
+          </div>
+      </div>
+  </section>
+
+  <!-- Downloads rápidos -->
+  <section class="aside-box">
+      <h3>Downloads Rápidos</h3>
+      <ul class="dl-list">
+          <li><a href="#">📁 Pacote STL – Top 5</a></li>
+          <li><a href="#">📁 Projetos – MDF</a></li>
+          <li><a href="#">📁 Logos 3D prontos</a></li>
+      </ul>
+  </section>
+
+  <!-- Posts Recentes -->
+  <section class="aside-box">
+      <h3>Posts Recentes</h3>
+      <ul class="post-list">
+          <li><a href="#">Como ajustar sua impressora 3D (24/11)</a></li>
+          <li><a href="#">Guia MDF para CNC Router (20/11)</a></li>
+          <li><a href="#">Corte a Laser sem queimar (17/11)</a></li>
+      </ul>
+  </section>
+
+  <!-- Galeria Mini -->
+  <section class="aside-box">
+      <h3>Mini Galeria</h3>
+      <div class="mini-galeria">
+          
+          <img src="img/polvo3d.jpg" alt="Polvo 3D" loading="lazy">
+          <img src="img/arduinoremoto.jpg" alt="Arduino Remoto" loading="lazy">
+          <img src="img/arduinorelogio.jpg" alt="Arduino Relogio" loading="lazy">
+          <img src="img/caixarlasercut.jpg" alt="Caixa Laser Cut" loading="lazy">
+          <img src="img/relogiolasercut.jpg" alt="Relógio Laser Cut" loading="lazy">
+      </div>
+  </section>
+
+  <!-- Cupom do Dia -->
+  <section class="aside-box destaque-cupom">
+      <h3>🎁 Cupom do Dia</h3>
+      <p>Use antes das 23:59!</p>
+      <strong>DIY10</strong>
+  </section>
+
+  <!-- Comunidade -->
+  <section class="aside-box">
+      <h3>Comunidade</h3>
+      <p>Entre para a comunidade maker e compartilhe seus projetos.</p>
+      <a href="#" class="btn-comunidade">Participar</a>
+  </section>
+
+  <!-- Comentários -->
+  <section class="aside-box comentarios">
+    <h3>Comentários</h3>
+
+    <div class="comentario">
+        <p class="texto">"Site incrível, aprendi muito!"</p>
+        <span class="autor">– João</span>
+    </div>
+
+    <div class="comentario">
+        <p class="texto">"Tutoriais super claros!"</p>
+        <span class="autor">– Ana</span>
+    </div>
+
+    <div class="comentario">
+        <p class="texto">"Seu passo a passo é muito claro e fácil de seguir. Parabéns!"</p>
+        <span class="autor">– David</span>
+    </div>
+
+    <div class="comentario">
+        <p class="texto">"Fiz e deu super certo! Só mudei o tamanho para caber na minha estante. Obrigada!"</p>
+        <span class="autor">– Julia</span>
+    </div>
+
+    <div class="comentario">
+        <p class="texto">"Postei uma foto do meu resultado no Instagram, te marquei lá!"</p>
+        <span class="autor">– Henrique</span>
+    </div>
+
+</section>
+
+
+  <!-- FAQ / Suporte -->
+  <section class="aside-box">
+      <h3>FAQ / Suporte</h3>
+      <ul class="faq-list">
+          <li><a href="#">Como baixar arquivos?</a></li>
+          <li><a href="#">Como funciona o cupom?</a></li>
+          <li><a href="#">Contato para suporte</a></li>
+      </ul>
+  </section>
+
+</aside>
+
+    
+</section>
+
+
+<footer id="site-footer">
+  <div class="container footer-inner">
+
+    <!-- Esquerda: Logo e direitos -->
+    <div class="footer-left">
+      <div class="logo-small">Manual do Criador</div>
+      <p>Sua criatividade, nosso guia.</p>
+      <p>© 2025 Manual do Criador — Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Centro: Links -->
+    <div class="footer-center">
+      <div class="footer-column">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="tutoriais.html">Tutoriais</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Suporte</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#">Políticas</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Direita: Redes sociais + Créditos -->
+    <div class="footer-right">
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>Imagens e logotipo podem ter sido gerados com IA (uso educacional)</p>
+      <p>Renan Ferreira de Souza - RA: 2760482522032</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<div id="erro-login" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>Ops! Algo deu errado 😅</h2>
+    <p>Parece que tivemos um erro inesperado ao tentar logar.</p>
+    <img src="img/funny.jpg" alt="Imagem divertida" />
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("theme-toggle"); // botão já existe
+  const body = document.body;
+  const STORAGE_KEY = "site-dark-mode";
+
+  // Aplica o tema salvo no localStorage
+  if(localStorage.getItem(STORAGE_KEY) === "enabled"){
+    body.classList.add("dark-mode");
+    toggle.textContent = "☀️";
+  } else {
+    body.classList.remove("dark-mode");
+    toggle.textContent = "🌙";
+  }
+
+  // Alterna tema ao clicar
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    if(body.classList.contains("dark-mode")){
+      localStorage.setItem(STORAGE_KEY, "enabled");
+      toggle.textContent = "☀️";
+    } else {
+      localStorage.setItem(STORAGE_KEY, "disabled");
+      toggle.textContent = "🌙";
+    }
+  });
+});
+</script>
+
+</body>
+</html>

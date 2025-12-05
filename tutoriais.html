@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutoriais - Manual do Criador</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="cabecalho">
+  <div class="cx-header">
+    <!-- Botão Dark Mode -->
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+    <div class="marca">Manual do Criador</div>
+
+    
+
+    <input type="checkbox" id="bt-menu">
+    <label for="bt-menu" class="label-menu">&#9776;</label>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li class="drop">
+          <a href="tutoriais.html">Tutoriais</a>
+        </li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li class="login-btn">
+  <a href="#erro-login">Login / Cadastro</a>
+</li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<section id="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-centered">
+      <h1>Tutoriais práticos e diretos</h1>
+      <p class="lead">Aprenda passo a passo — desde ideias para iniciantes até técnicas intermediárias.</p>
+  </div>
+</section>
+
+
+<section id="layout" class="section-pad">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+      <h2 style="margin:0">Tutoriais em destaque</h2>
+      <span class="badge">Atualizado • 2025</span>
+    </div>
+
+    <div id="cards-grid">
+      <article class="card">
+        <img src="img/guiaimpressao3d.jpg" alt="Guia Impressão 3D">
+        <h3>Guia de Impressão 3D</h3>
+        <p>Passo a passo para configurar sua impressora e evitar falhas comuns.</p>
+        <div style="margin-top:12px"><a class="btn" href="#">Ler tutorial</a></div>
+      </article>
+
+      <article class="card">
+        <img src="img/introducaocnc.jpg" alt="Introdução CNC">
+        <h3>Introdução à CNC</h3>
+        <p>Conceitos básicos, fixação de peças e primeiros cortes em MDF.</p>
+        <div style="margin-top:12px"><a class="btn" href="#">Ler tutorial</a></div>
+      </article>
+
+      <article class="card">
+        <img src="img/eletronicainiciantes.jpg" alt="Eletrônica iniciantes">
+        <h3>Eletrônica para Iniciantes</h3>
+        <p>Protoboard, componentes fundamentais e um circuito exemplo.</p>
+        <div style="margin-top:12px"><a class="btn" href="#">Ler tutorial</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer">
+  <div class="container footer-inner">
+
+    <!-- Esquerda: Logo e direitos -->
+    <div class="footer-left">
+      <div class="logo-small">Manual do Criador</div>
+      <p>Sua criatividade, nosso guia.</p>
+      <p>© 2025 Manual do Criador — Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Centro: Links -->
+    <div class="footer-center">
+      <div class="footer-column">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="tutoriais.html">Tutoriais</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Suporte</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#">Políticas</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Direita: Redes sociais + Créditos -->
+    <div class="footer-right">
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>Imagens e logotipo podem ter sido gerados com IA (uso educacional)</p>
+      <p>Renan Ferreira de Souza - RA: 2760482522032</p>
+    </div>
+
+  </div>
+</footer>
+
+
+</script>
+<div id="erro-login" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>Ops! Algo deu errado 😅</h2>
+    <p>Parece que tivemos um erro inesperado ao tentar logar.</p>
+    <img src="img/funny.jpg" alt="Imagem divertida" />
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("theme-toggle"); // botão já existe
+  const body = document.body;
+  const STORAGE_KEY = "site-dark-mode";
+
+  // Aplica o tema salvo no localStorage
+  if(localStorage.getItem(STORAGE_KEY) === "enabled"){
+    body.classList.add("dark-mode");
+    toggle.textContent = "☀️";
+  } else {
+    body.classList.remove("dark-mode");
+    toggle.textContent = "🌙";
+  }
+
+  // Alterna tema ao clicar
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    if(body.classList.contains("dark-mode")){
+      localStorage.setItem(STORAGE_KEY, "enabled");
+      toggle.textContent = "☀️";
+    } else {
+      localStorage.setItem(STORAGE_KEY, "disabled");
+      toggle.textContent = "🌙";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
